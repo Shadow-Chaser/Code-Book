@@ -6,7 +6,7 @@ void find_divisors(int n)
 	{
 		if (n % i == 0)
 		{
-			if (n % i == i)
+			if (n / i == i)
 				divisors.push_back(i);
 			else
 			{
