@@ -9,9 +9,11 @@ vector <int> g[MX];
 bool vis[MX];
 
 
-void dfs(int source) {
+void dfs(int source)
+{
 	vis[source] = 1;
-	for (int i = 0; i < g[source].size(); i++) {
+	for (int i = 0; i < g[source].size(); i++)
+	{
 		int next = g[source][i];
 		if (vis[next] == 0)
 			dfs(next);
@@ -37,12 +39,15 @@ int main()
 	cin >> s;
 	dfs(s);
 
-	for (int i = 1; i <= nodes; i++) {
-		if (vis[i] == 1) {
+	for (int i = 1; i <= nodes; i++)
+	{
+		if (vis[i] == 1)
+		{
 			cout << "Node " << i << " is visited." << endl;
 
 		}
-		else {
+		else
+		{
 			cout << "Node " << i << " is not visited" << endl;
 		}
 	}
