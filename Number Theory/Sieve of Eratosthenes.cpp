@@ -1,4 +1,4 @@
-const int Max=1000000;
+const int Max=1e7;
 bool prime_check[Max+1];
 vector <int> prime_list;
 
